@@ -1,0 +1,103 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Arm_Processor_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Thomas\ Haskell/Documents/School/Comp\ Arc/scrum_run {C:/Users/Thomas Haskell/Documents/School/Comp Arc/scrum_run/RegisterNbit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RegisterNbit
+# 
+# Top level modules:
+# 	RegisterNbit
+# vlog -vlog01compat -work work +incdir+C:/Users/Thomas\ Haskell/Documents/School/Comp\ Arc/scrum_run {C:/Users/Thomas Haskell/Documents/School/Comp Arc/scrum_run/Mux32to1Nbit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux32to1Nbit
+# 
+# Top level modules:
+# 	Mux32to1Nbit
+# vlog -vlog01compat -work work +incdir+C:/Users/Thomas\ Haskell/Documents/School/Comp\ Arc/scrum_run {C:/Users/Thomas Haskell/Documents/School/Comp Arc/scrum_run/Decoder5to32.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Decoder5to32
+# 
+# Top level modules:
+# 	Decoder5to32
+# vlog -vlog01compat -work work +incdir+C:/Users/Thomas\ Haskell/Documents/School/Comp\ Arc/scrum_run {C:/Users/Thomas Haskell/Documents/School/Comp Arc/scrum_run/RegFile32x64.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RegFile32x64
+# 
+# Top level modules:
+# 	RegFile32x64
+# vlog -vlog01compat -work work +incdir+C:/Users/Thomas\ Haskell/Documents/School/Comp\ Arc/scrum_run {C:/Users/Thomas Haskell/Documents/School/Comp Arc/scrum_run/Shifter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Shifter
+# 
+# Top level modules:
+# 	Shifter
+# vlog -vlog01compat -work work +incdir+C:/Users/Thomas\ Haskell/Documents/School/Comp\ Arc/scrum_run {C:/Users/Thomas Haskell/Documents/School/Comp Arc/scrum_run/Adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Adder
+# 
+# Top level modules:
+# 	Adder
+# vlog -vlog01compat -work work +incdir+C:/Users/Thomas\ Haskell/Documents/School/Comp\ Arc/scrum_run {C:/Users/Thomas Haskell/Documents/School/Comp Arc/scrum_run/Mux8to1Nbit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux8to1Nbit
+# 
+# Top level modules:
+# 	Mux8to1Nbit
+# vlog -vlog01compat -work work +incdir+C:/Users/Thomas\ Haskell/Documents/School/Comp\ Arc/scrum_run {C:/Users/Thomas Haskell/Documents/School/Comp Arc/scrum_run/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# vlog -vlog01compat -work work +incdir+C:/Users/Thomas\ Haskell/Documents/School/Comp\ Arc/scrum_run {C:/Users/Thomas Haskell/Documents/School/Comp Arc/scrum_run/RAM256x64.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RAM256x64
+# 
+# Top level modules:
+# 	RAM256x64
+# vlog -vlog01compat -work work +incdir+C:/Users/Thomas\ Haskell/Documents/School/Comp\ Arc/scrum_run {C:/Users/Thomas Haskell/Documents/School/Comp Arc/scrum_run/Datapath.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Datapath
+# 
+# Top level modules:
+# 	Datapath
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Thomas\ Haskell/Documents/School/Comp\ Arc/scrum_run {C:/Users/Thomas Haskell/Documents/School/Comp Arc/scrum_run/Datapath_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Datapath_tb
+# 
+# Top level modules:
+# 	Datapath_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  Datapath_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Datapath_tb 
+# Loading work.Datapath_tb
+# Loading work.Datapath
+# Loading work.RegFile32x64
+# Loading work.RegisterNbit
+# Loading work.Decoder5to32
+# Loading work.Mux32to1Nbit
+# Loading work.ALU
+# Loading work.Adder
+# Loading work.Shifter
+# Loading work.Mux8to1Nbit
+# Loading work.RAM256x64
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module Datapath_tb at C:/Users/Thomas Haskell/Documents/School/Comp Arc/scrum_run/Datapath_tb.v line 136
+# Simulation Breakpoint: Break in Module Datapath_tb at C:/Users/Thomas Haskell/Documents/School/Comp Arc/scrum_run/Datapath_tb.v line 136
+# MACRO ./Arm_Processor_run_msim_rtl_verilog.do PAUSED at line 26

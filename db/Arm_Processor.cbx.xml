@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Arm_Processor">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Datapath|RAM256x64:ram|altsyncram:mem_rtl_0" CBX_FILE_NAME="altsyncram_nc81.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
