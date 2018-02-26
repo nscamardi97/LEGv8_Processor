@@ -1,0 +1,10 @@
+module RAM256x64(address, clock, in, write, out);
+	input [7:0] address;
+	input clock;
+	input [63:0] in;
+	input write;
+	output [63:0] out;
+	
+	reg [63:0] mem [0:255];
+	
+endmodule

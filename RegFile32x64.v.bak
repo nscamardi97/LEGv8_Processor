@@ -1,0 +1,11 @@
+module RegFile32x64(A, B, D, DA, SA, SB, W, reset, clock);
+	output [63:0]A, B; // output buses
+	input [63:0]D; // data input
+	input [4:0]DA; // destination data address
+	input [4:0]SA; // select address for A bus
+	input [4:0]SB; // select address for B bus
+	input W; // write enable
+	input reset; // asynchronous
+	input clock; // posedge
+	
+endmodule

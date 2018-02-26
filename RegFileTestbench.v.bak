@@ -1,0 +1,14 @@
+module RegFileTestbench();
+	wire [63:0] A, B;
+	reg [63:0] D;
+	reg [4:0] DA, SA, SB;
+	reg W, reset, clock;
+	
+	RegFile32x64 dut (A, B, D, DA, SA, SB, W, reset, clock);
+	
+	initial 
+	
+	always begin
+		#5 clock <= ~clock;
+	end
+endmodule

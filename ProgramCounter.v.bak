@@ -1,0 +1,43 @@
+module ProgramCounter(PS, data_in, PC4, PC, clock, reset);
+input clock;
+input reset;
+input [2:0] PS;
+input [63:0] data_in;
+inout [63:0] PC4;
+output [63:0] PC;
+
+
+wire [63:0] PCplus4;
+assign PCplus4 = PC4;
+wire [63:0] Add_out;
+wire [63:0] mux_out0;
+wire [63:0] mux_out1;
+wire SM0, SM1; 
+assign SM0 = PS[2];
+assign SM1 = PS[1];
+
+
+assign mux_out0 = SM0 ? data_in : {data_in[63:2], 2'b00};
+assign PCplus4 = PC + 3'b100;
+assign Add_out = PCplus4 + mux_out0;
+assign mux_out1 = SM1 ? PCplus4 : Add_out;
+RegisterNbit reg1 (PC, mux_out1, PS[0], reset, clock);
+
+
+endmodule 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

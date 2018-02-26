@@ -1,0 +1,19 @@
+module ALU_Testbench();
+	wire [63:0] F;
+	reg [63:0] A, B;
+	wire [3:0] status;
+	reg [4:0] FS;
+	
+	ALU dut(F, status, A, B, FS);
+	
+	initial begin 
+		FS <= 5'b00000;
+		A <= 64'd2;
+		B <= 64'd5;
+		#5 FS <= 5'b00100;
+		FS <= 5'b01000;
+		A <= 64'd1;
+		B <= 64'd15;
+	end
+	
+endmodule

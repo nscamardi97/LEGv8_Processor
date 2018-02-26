@@ -1,0 +1,18 @@
+module Datapath();
+	
+	input [24:0] ControlWorld;
+	inout [63:0] data;
+	input clock, reset;
+	output [3:0] status;
+	
+	wire [4:0] SA, SB, DA;
+	wire RegWrite, MemWrite; 
+	wire [63:0] RegAbus, RegBbus;
+	wire [4:0] FS;
+	wire C0;
+	wire [63:0] ALU_output, MEM_output;
+	wire EN_Mem, EN_ALU;
+	
+	assign {SA, SB, DA, RegWrite, MemWrite, FS, C0, EN_Mem, EN_ALU} = ControlWorld;
+	
+endmodule
